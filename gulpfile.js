@@ -30,3 +30,6 @@ gulp.task('dev', ['clean'], function() {
 		.pipe(gulp.dest('.'));
 });
 
+gulp.task('wdev', function() {
+	gulp.watch('Tpl/*', ['dev']);
+})
